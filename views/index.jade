@@ -1,5 +1,6 @@
 extends layout
 
+.jumbotron
 block content
   h1 My Express Project
   p Simple RESTful web application using Node.js, Express, and MongoDB
@@ -26,19 +27,26 @@ block content
 
     // USER LIST
     h2 User List
-    #userList
-      table
+    #userList.table.table-hover
+      table 
         thead
           th UserName
           th Email
           th Remove User?
         tbody
+          tr.table-info
+          th (scope="row") 1
+          tr.table-info
+          th (scope="row") 2
+          tr.table-info
+          th (scope="row") 3
     // /USER LIST
-
+    
     // ADD USER
     h2 Add User
     #addUser
-      fieldset
+      fieldset.form-group
+
         input#inputUserName(type='text', placeholder='Username')
         input#inputUserEmail(type='text', placeholder='Email')
         br
@@ -47,8 +55,13 @@ block content
         br
         input#inputUserLocation(type='text', placeholder='Location')
         input#inputUserGender(type='text', placeholder='gender')
-        br
-        button#btnAddUser Add User
+        //- label(for="gender")
+        //- select#gender.form-group(name="gender")
+        //-   option(value="male") Male
+        //-   option(value="female") Female
+        //-   option(value="NA") I do not wish to identify
+        //- br
+        button#btnAddUser.btn.btn-primary.btn-sm Add User
     // /ADD USER
 
   // /WRAPPER
