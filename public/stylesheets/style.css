@@ -19,12 +19,13 @@ a {
 #userList {
 	margin:0 0 30px 0;
 }
-	#userList table {
+	/* #userList table {
 		border-collapse:separate;
-		border-spacing:1px;
-		background:	#008080;
-	}
-		#userList table th {
+		border-spacing:2px;
+		border-block-color: white;
+		background: bisque;
+	} */
+		/* #userList table th {
 			background:#d4e7e8;
 			font-weight:600;
 			padding:10px 20px;
@@ -39,7 +40,7 @@ a {
 				background:ivory;
 				padding:5px 10px;
 				text-align:center;
-			}
+			} */
 
 #userInfo {
 	width:250px;
@@ -52,7 +53,7 @@ a {
    		background: ivory;
 	}
 
-fieldset {
+/* fieldset {
 	border:0;
 	padding:0; margin:0;
-}
+} */
